@@ -3,9 +3,9 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "advent-of-code-wim"
+name = "advent-of-code-dan"
 dynamic = ["version"]
-description = "Wim's solutions for https://adventofcode.com/"
+description = "Dan's solutions for https://adventofcode.com/"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Topic :: Games/Entertainment :: Puzzle Games",
@@ -27,27 +27,27 @@ dependencies = [
 ]
 
 [[project.authors]]
-name = "Wim Glenn"
-email = "hey@wimglenn.com"
+name = "Daniel Dugovic"
+email = "ddugovic@users.noreply.github.com"
 
 [project.license]
-text = "WTFPL"
+text = "GPL"
 
 [project.readme]
 file = "README.md"
 content-type = "text/markdown"
 
 [project.urls]
-Homepage = "https://github.com/wimglenn/advent-of-code"
+Homepage = "https://github.com/ddugovic/advent-of-code"
 
 [project.scripts]
-aocw = "aoc_wim.cli:run_one"
-s = "aoc_wim.cli:speedhack"
-_set_docstrings = "aoc_wim.util:set_docstrings"
-aoc-init = "aoc_wim.util:start"
+aocw = "aoc_dan.cli:run_one"
+s = "aoc_dan.cli:speedhack"
+_set_docstrings = "aoc_dan.util:set_docstrings"
+aoc-init = "aoc_dan.util:start"
 
 [project.entry-points."adventofcode.user"]
-wim = "aoc_wim:plugin"
+dan = "aoc_dan:plugin"
 
 [tool.setuptools.dynamic]
-version = {attr = "aoc_wim.__version__"}
+version = {attr = "aoc_dan.__version__"}
