@@ -3,7 +3,6 @@
 https://adventofcode.com/2024/day/4
 """
 from aocd import data
-from re import findall
 
 a = b = 0
 grid = []
